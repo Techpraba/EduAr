@@ -1,0 +1,33 @@
+.card-container{
+        width: 200px;
+        height: 170px;
+        background-color: rgba(255, 255, 255, 0.479);
+        border-radius: 10px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        
+        position: relative;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+
+}
+.card-image{
+        width: 100px;
+        height: 150px;
+      
+        position: absolute;
+        top: -60;
+        left: 40;
+        z-index: 10;
+
+}
+.btn{
+        border: 2px solid gold;
+        padding:3px;
+        width: 70%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+}

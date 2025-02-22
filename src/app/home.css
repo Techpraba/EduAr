@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.homeOverall{
+    display: flex;
+}
+.leftside{
+    width: 50%;
+    height: 90vh;
+    background-color:cyan;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 75px;
+    position: relative;
+    color: black;
+}
+
+
+.booking{
+    font-size: 70px;
+}
+.centerimg{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    left: 37%;
+    top: 200px;
+    border-radius: 50%;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+
+
+}
+.centerpic{
+    border-radius: 50%;
+}
+
+.rightside{
+    width: 50%;
+    height: 90vh;
+    background-color:pink;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-bottom: 70px;
+   
+}
+.cardSec{
+    width: 300px;
+    height:500px;
+    padding: 40px;
+    overflow: scroll;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    flex-direction: column;
+
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cardSec::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .cardSec {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
