@@ -4,7 +4,7 @@ import Card from './component/card/card'
 import './home.css'
 import pic from './asserts/book-lover-concept-illustration.png'
 import book1 from './asserts/books/6920933-removebg-preview.png'
-import { StaticImageData } from 'next/image';
+
 
 
 function Home() {
