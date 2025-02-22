@@ -1,8 +1,12 @@
+
 import Image from "next/image";
 import Card from './component/card/card'
 import './home.css'
 import pic from './asserts/book-lover-concept-illustration.png'
 import book1 from './asserts/books/6920933-removebg-preview.png'
+import { StaticImageData } from 'next/image';
+
+
 function Home() {
   return (
     <>
@@ -19,9 +23,9 @@ function Home() {
         </div>
         <div className="rightside">
           <div className="cardSec">
-            <Card books={book1} />
-            <Card books={book1} />
-            <Card  books={book1} />
+            <Card booksImg={book1} bookName={"Book1"} bookPrice={"$200"} />
+            <Card booksImg={book1} bookName={"Book2"} bookPrice={"$2150"}  />
+            <Card booksImg={book1} bookName={ "Book3"}  bookPrice={"$1500"} />
           </div>
           
         </div>
