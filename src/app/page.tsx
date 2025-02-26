@@ -14,6 +14,9 @@ function Home() {
   return (
     <>
       <div className="homeOverall">
+      <div className="centerimg">
+          <Image src={pic} alt="Book Lover Concept Illustration" className="centerpic" />
+        </div>
         <div className="leftside">
       
             <p>Learning Platform</p>
@@ -21,9 +24,7 @@ function Home() {
           <p>Get the best deals on your favorite brands</p> 
           <button className="homebtn">Shop Now</button>
         </div>
-        <div className="centerimg">
-          <Image src={pic} alt="Book Lover Concept Illustration" className="centerpic" />
-        </div>
+       
         <div className="rightside">
           <div className="cardSec">
             <Card booksImg={book1} bookName={"Book1"} bookPrice={"$200"} />

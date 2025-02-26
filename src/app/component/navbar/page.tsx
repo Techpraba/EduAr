@@ -1,32 +1,42 @@
-
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import Link from 'next/link';
 import './Navbar.css';
 
- function Home() {
-    return (
-      <>
-            <div className='NavbarOverall'>
-                <div className='navlink'>
-                    <Link href="/">Home</Link>        
-                    <Link href="/">About</Link>        
-                    <Link href="/">Featurs</Link>        
-                    <Link href="/">Store</Link>   
-                    <Link href="/">Blog</Link> 
-                </div>  
-               
-                <h1 className='headline'>EDUAR</h1>
-                <div className='leftSideNavbar'>
-                    <input type="text" />
-                    <h1>icon</h1>
-                    <button>Signup</button>
+import { FaSearch } from "react-icons/fa";
+import { MdOutlineCancel } from "react-icons/md";
+import { IoMenuOutline } from "react-icons/io5";
 
-                </div>
-              
-              
-             
-        </div>
-      </>
-    );
-  }
-export default Home;
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="NavbarOverall">
+      <div className="hamburger" onClick={toggleMenu}>
+        {isOpen ? <MdOutlineCancel size={24} /> :<IoMenuOutline  size={24}/>}
+      </div>
+
+      <div className={`navlink ${isOpen ? 'open' : ''} `} >
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/features">Features</Link>
+        <Link href="/store">Store</Link>
+        <Link href="/blog">Blog</Link>
+      </div>
+
+      <h1 className="headline">EDUAR</h1>
+
+      <div className="leftSideNavbar">
+        <input type="text" placeholder="Search..." />
+        <FaSearch size={24} className='searchicon' />
+        <button>Signup</button>
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;

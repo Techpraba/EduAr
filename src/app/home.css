@@ -34,6 +34,7 @@
     border-radius: 50%;
     border-left: 10px solid white;
     border-right: 10px solid white;
+    z-index: 22;
 
 
 }
@@ -130,3 +131,70 @@
   .homeicons p{
     width: 80%;
   }
+ 
+
+@media screen and (max-width: 768px) {
+  .homeOverall {
+    flex-direction: column;
+  }
+
+  .leftside, .rightside {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .centerimg {
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+  }
+
+  .booking {
+    font-size: 50px;
+  }
+
+  .cardSec {
+    width: 100%;
+    height: auto;
+  }
+
+  .homeicons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homeicons > div {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .booking {
+    font-size: 30px;
+  }
+
+  .centerimg {
+    width: 150px;
+    height: 150px;
+    position: unset;
+  }
+
+  .homebtn {
+    width: 80px;
+    font-size: 12px;
+  }
+
+  .bookHeadline {
+    font-size: 16px;
+  }
+
+  .bookpara {
+    font-size: 8px;
+  }
+}
+
