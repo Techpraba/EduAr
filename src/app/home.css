@@ -9,8 +9,8 @@
 }
 .leftside{
     width: 50%;
-    height: 90vh;
-    background-color:cyan;
+    height: 100vh;
+    background-color:yellow;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -43,8 +43,8 @@
 
 .rightside{
     width: 50%;
-    height: 90vh;
-    background-color:pink;
+    height: 100vh;
+    background-color:rgb(255, 255, 124);
     display: flex;
     justify-content: end;
     align-items: center;
@@ -75,4 +75,58 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
-  
+  .homebtn{
+    padding: 5px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition-duration:1s ;
+  }
+  .homebtn:hover{
+    background-color: greenyellow;
+    color: black;
+
+  }
+  /* ================second Part of the website================ */
+
+  .secPartOverall{
+    width: 100%;
+    height: 100vh;
+ 
+    display: flex;
+  }
+  .lColor{
+    background-color:rgb(255, 255, 124);
+  }
+  .rColor{
+    background-color:rgb(255, 255, 124);
+  }
+  .homeicons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 50px;
+  }
+  .homeicons{
+    font-size: 30px;
+   
+   
+  }
+  .homeicons>div{
+    display: flex;
+    flex-direction: column;
+  }
+  .bookHeadline{
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+  }
+  .bookpara{
+    font-size: 10px;
+  }
+  .homeicons p{
+    width: 80%;
+  }
