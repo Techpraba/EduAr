@@ -4,8 +4,10 @@ import Card from './component/card/card'
 import './home.css'
 import pic from './asserts/book-lover-concept-illustration.png'
 import book1 from './asserts/books/6920933-removebg-preview.png'
+import Books from './component/books/page'
 
 import { FaBookReader ,  FaHandHoldingHeart,FaRecycle} from "react-icons/fa";
+
 
 
 
@@ -67,6 +69,18 @@ function Home() {
           <Image src={pic} alt="Book Lover Concept Illustration" className="centerpic" />
         </div>
       </div>
+      {/* third Part of the website */}
+      <div className="thirdPartOverall">
+        <h1>Best Books of 2024</h1>
+      <div className="bookDetails">    
+          <Books books={book1} bookName={"one Piece"} bookPrice={ "$200"} />
+      <Books books={book1} bookName={"one Piece"} bookPrice={ "$200"} />
+      <Books books={book1}  bookName={"one Piece"} bookPrice={ "$200"} />
+      <Books books={book1} bookName={"one Piece"} bookPrice={ "$200"} />
+           
+   
+        </div>
+        </div>
     </>
   );
 }

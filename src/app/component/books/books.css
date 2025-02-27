@@ -1,0 +1,38 @@
+
+.bookCard{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.788);
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+
+}
+.bookimg{
+    width: 100%;
+    height: 50%;
+ 
+    position: relative;
+}
+.bkimg{ 
+    position: absolute;
+    top: -140;
+}
+.bookdescription{
+    width: 90%;
+    height: 50%;
+    color: black;
+}
+.bookdescription > p{
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+.bookdescription div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
