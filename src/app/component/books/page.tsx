@@ -3,7 +3,7 @@ import React from "react";
 import './books.css'
 import Image from "next/image";
 
-function books({books,bookName,bookPrice} : {books:string | any , bookName:String,bookPrice:String}) {
+function books({books,bookName,bookPrice} : {books:string | any , bookName:string,bookPrice:string}) {
     return (
         
         <>
