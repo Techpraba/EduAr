@@ -2,24 +2,27 @@
 .bookCard{
     width: 300px;
     height: 300px;
-    background-color: rgba(255, 255, 255, 0.788);
+    background-color: #b7b7b752;
+    
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
     display: flex;
     justify-content: center;
     align-items: center;    
     flex-direction: column;
-
+    margin-top: 20px;
+box-shadow: 6px 5px 20px 0px black;
 }
 .bookimg{
-    width: 100%;
+    width: 80%;
     height: 50%;
  
     position: relative;
 }
 .bkimg{ 
+    
     position: absolute;
-    top: -140;
+    top: -100;
 }
 .bookdescription{
     width: 90%;

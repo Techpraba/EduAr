@@ -3,7 +3,7 @@ import React from "react";
 import './books.css'
 import Image from "next/image";
 
-function books({books,bookName,bookPrice} : {books:string | any , bookName:string,bookPrice:string}) {
+function books({books,bookName,bookPrice,authorName,bookRating} : {books:string | any , bookName:string,bookPrice:string , authorName:string,bookRating:string}) {
     return (
         
         <>
@@ -15,8 +15,8 @@ function books({books,bookName,bookPrice} : {books:string | any , bookName:strin
                     
                 <div className="bookdescription">
                     <h1>{bookName}</h1>
-                    <h3>Oda the Cook</h3>
-                    <p> * * * * *</p>
+                    <h3>{authorName }</h3>
+                    <p> { bookRating}</p>
                     <div>
                         <h2>{bookPrice}</h2>
                         <button>Buy...!</button>

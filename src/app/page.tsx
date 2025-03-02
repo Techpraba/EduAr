@@ -73,14 +73,19 @@ function Home() {
       <div className="thirdPartOverall">
         <h1>Best Books of 2024</h1>
       <div className="bookDetails">    
-          <Books books={book1} bookName={"one Piece"} bookPrice={ "$200"} />
-      <Books books={book1} bookName={"one Piece"} bookPrice={ "$200"} />
-      <Books books={book1}  bookName={"one Piece"} bookPrice={ "$200"} />
-      <Books books={book1} bookName={"one Piece"} bookPrice={ "$200"} />
-           
-   
+          <Books books={book1} bookName={"one Piece"} bookPrice={"$200"} authorName={"oda the cook"} bookRating={"*****" } />
+      <Books books={book1} bookName={"one Piece"} bookPrice={ "$200"}  authorName={"oda the cook 2"}  bookRating={"*****" } />
+      <Books books={book1}  bookName={"one Piece"} bookPrice={ "$200"}  authorName={"oda the cook 3"}  bookRating={"*****" } />
+      {/* <Books books={book1} bookName={"one Piece"} bookPrice={ "$200"}  authorName={"oda the cook 4"}  bookRating={"*****" } />
+      <Books books={book1} bookName={"one Piece"} bookPrice={ "$200"}  authorName={"oda the cook 4"}  bookRating={"*****" } />
+          <Books books={book1} bookName={"one Piece"} bookPrice={"$200"} authorName={"oda the cook 4"} bookRating={"*****"} />
+          <Books books={book1} bookName={"one Piece"} bookPrice={"$200"} authorName={"oda the cook 4"} bookRating={"*****"} />
+          <Books books={book1} bookName={"one Piece"} bookPrice={"$200"} authorName={"oda the cook 4"} bookRating={"*****"} /> */}
+         
         </div>
-        </div>
+        
+      </div>
+      <button className="viewMore">View More...!</button>
     </>
   );
 }
